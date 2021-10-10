@@ -128,16 +128,7 @@ Logistic regression did not work well on the "flower dataset". I am going to tra
 
 **Mathematically**:
 
-For one example $x^{(i)}$:
-$$z^{[1] (i)} =  W^{[1]} x^{(i)} + b^{[1] (i)}\tag{1}$$ 
-$$a^{[1] (i)} = \tanh(z^{[1] (i)})\tag{2}$$
-$$z^{[2] (i)} = W^{[2]} a^{[1] (i)} + b^{[2] (i)}\tag{3}$$
-$$\hat{y}^{(i)} = a^{[2] (i)} = \sigma(z^{ [2] (i)})\tag{4}$$
-$$y^{(i)}_{prediction} = \begin{cases} 1 & \mbox{if } a^{[2](i)} > 0.5 \\ 0 & \mbox{otherwise } \end{cases}\tag{5}$$
-
-Given the predictions on all the examples, you can also compute the cost $J$ as follows: 
-$$J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large\left(\small y^{(i)}\log\left(a^{[2] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[2] (i)}\right)  \large  \right) \small \tag{6}$$
-
+<img width="610" alt="Screen Shot 2021-10-11 at 12 32 35 am" src="https://user-images.githubusercontent.com/56792400/136697940-f713d03d-bc11-4e80-bae0-d7a6a4c22f4b.png">
 
 ### 4.1 - Defining the neural network structure ####
 
@@ -283,7 +274,7 @@ print(np.mean(cache['Z1']) ,np.mean(cache['A1']),np.mean(cache['Z2']),np.mean(ca
 
 Now that I have computed $A^{[2]}$ (in the Python variable "`A2`"), which contains $a^{[2](i)}$ for every example, I can compute the cost function as follows:
 
-$$J = - \frac{1}{m} \sum\limits_{i = 0}^{m} \large{(} \small y^{(i)}\log\left(a^{[2] (i)}\right) + (1-y^{(i)})\log\left(1- a^{[2] (i)}\right) \large{)} \small\tag{13}$$
+<img width="392" alt="Screen Shot 2021-10-11 at 12 34 12 am" src="https://user-images.githubusercontent.com/56792400/136698006-956202bc-af74-45e7-9291-24e3d087f74a.png">
 
 Implementinng `compute_cost()` to compute the value of the cost $J$.
 
