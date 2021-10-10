@@ -1,4 +1,4 @@
-#  Classification with one hidden layer Planar data
+#  Classification with one hidden layer on Planar data
 
 Building neural network, which will have a hidden layer implementing using logistic regression. 
 
