@@ -1,1 +1,0 @@
-# Classification-with-one-hidden-layer-Planar-data
